@@ -1,0 +1,137 @@
+.query-builder {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    height: 45vh;
+    overflow-y: scroll;
+}
+
+.sidebar {
+    background: #f9f9f9;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.table-list {
+    max-height: 45vh;
+    overflow-y: scroll;
+}
+
+.workspace {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+    background: #e7e7e7;
+    overflow-y: auto;
+    margin-bottom: auto;
+    height: 45vh;
+}
+
+.table-box {
+    width: 30%;
+    background: white;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 10px;
+    height: /*200px;*/45vh;
+    overflow-y: scroll;
+}
+
+.table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    /* position: sticky;
+    top: 0;
+    background-color: grey;
+    width: 100%;
+    margin: 0; */
+}
+
+.remove-table {
+    color: red;
+    cursor: pointer;
+}
+
+
+.where-condition > select {
+    margin: auto 10px;
+}
+
+.join > select {
+    margin: auto 10px;
+}
+.query-output {
+    background: #f4f4f4;
+    padding: 10px;
+}
+
+.query-output > button {
+    margin-right: 10px;
+}
+
+.queryname-and-dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.queryname-and-dropdown > input, .queryname-and-dropdown > select {
+    width: 43%;
+}
+.results {
+    grid-column: span 3;
+    padding: 10px;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.result-table {
+    /* text-align: center; */
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+
+
+
+.result-table th{
+    background-color: #fff;
+    /* text-transform: uppercase; */
+    color: #fff;
+    color: black;
+    padding: 0 2px;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+
+}
+
+.result-table td {
+    /* border: 1px solid grey; */
+    padding: 0;
+    /* margin: 13px; */
+    /* width: 100%; */
+    white-space: nowrap;
+    max-width: 100px;
+    min-width: 100px;
+    overflow: scroll;
+    border: 1px solid lightgrey;
+    padding-left: 4px;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.result-table td::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.result-table td {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.result-table tr:nth-child(even) {
+    background-color: lavender;
+}
